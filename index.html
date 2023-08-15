@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Fitness Freaks - A gym for all your fitness goals and needs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <!-- utils.css is an external utility style sheet for reusing the various css in different classes.   -->
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Fitness Freaks</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col px-2">
+                        <img class="doubledumbellimg" img src="Double Dumble.jpg" width="50px" height="50px" alt="">
+                        <div class="text-center">
+                            <h1 class="my-1" text-center>A gym for all your fitness goals and needs</h1>
+                            <p class="description">Fitness freaks is the ultimate stop for all your fitness needs and
+                                goals. Here you and the the quality trainers will work hard to achieve the body
+                                you desire. Open everyday from 6:30 AM to 9:00 PM </p>
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                        </div>
+                        <script>
+                            var countDownDate = new Date("Aug 25, 2023 15:37:25").getTime();
+
+                            var x = setInterval(function () {
+                                var now = new Date().getTime();
+                                var distance = countDownDate - now;
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                                document.getElementById("demo").innerHTML = countdownText;
+
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "EXPIRED";
+                                }
+                            }, 1000);
+                        </script>
+                        <div class="topright">
+                            <img class="gym1img" img src="Gym1.jpg" width="100px" height="80px" alt="">
+                        </div>
+                    </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="pricing my-2">Pricing</h1>
+                <p class="pricingdescription">We have prices covered for all the types of people who want to improve
+                    themselves and want to get into the best shape possible. We have plans that will interest you and
+                    will fit right in your budget, plus we have additional benefits for Pro and Deluxe members. So make
+                    sure to check all the plans and see what suits you the best.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Normal</h2>
+                        <ul>
+                            <li class="highlighted">₹500/month</li>
+                            <li>Steam</li>
+                            <li>Diet Plan</li>
+                            <li>Locker Room</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹1000/month</li>
+                            <li>Steam</li>
+                            <li>Diet Plan</li>
+                            <li>Locker Room</li>
+                            <li>Various other activities</li>
+                            <li>Access to sauna</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Deluxe</h2>
+                        <ul>
+                            <li class="highlighted">₹3000/month</li>
+                            <li>Steam</li>
+                            <li>Diet Plan</li>
+                            <li>Locker Room</li>
+                            <li>Various other activities</li>
+                            <li>Access to sauna</li>
+                            <li>Personal Trainer</li>
+                            <li>Two complimentary personal training sessions per month</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Normal</th>
+                                <th>Pro</th>
+                                <th>Deluxe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Steam</th>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Diet Plan</th>
+                                <td>✓</td>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="text-start">Locker Room</th>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Various other activities</th>
+                                <td>-</td>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Access to sauna</th>
+                                <td>-</td>
+                                <td>✓</svg></td>
+                                <td>✓</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Personal Trainer</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✓</svg></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-start">Personal Training Sessions</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>✓</svg></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+        <footer>Copyright &copy; FitnessFreaks.com | All rights reserved
+        </footer>
+    </div>
+</body>
